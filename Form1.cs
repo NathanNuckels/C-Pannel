@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace WindowsApp
 {
     public partial class Form1 : Form
     {
-        Button b1 = new Button();
-        TextBox tb = new TextBox();
-        ColorDialog cd = new ColorDialog();
         public Form1()
         {
 

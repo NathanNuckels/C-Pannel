@@ -14,7 +14,7 @@ namespace WindowsApp
     {
         Button b1 = new Button();
         TextBox tb = new TextBox();
-        ColorDialog cd = new ColorDialog();
+        FontDialog flg = new FontDialog();
         public Form1()
         {
             b1.Click += new EventHandler(b1_click);
@@ -28,7 +28,7 @@ namespace WindowsApp
 
         public void b1_click(object sender, EventArgs eventArgs){
             cd.ShowDialog();
-            tb.BackColor = cd.Color;
+            tb.FontName = flg.Font;
 
         }
 

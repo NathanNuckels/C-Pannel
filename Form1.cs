@@ -17,25 +17,8 @@ namespace WindowsApp
         ColorDialog cd = new ColorDialog();
         public Form1()
         {
-            b1.Click += new EventHandler(b1_click);
-            b1.Text="OK";
-            tb.Location = new Point(50,50);
-            this.Controls.Add(b1);
-            this.Controls.Add(tb);
-            this.Paint += new PaintEventHandler(f1_paint);
+
             InitializeComponent();
-        }
-
-        public void b1_click(object sender, EventArgs eventArgs){
-            cd.ShowDialog();
-            tb.BackColor = cd.Color;
-
-        }
-
-        private void f1_paint(object sender, PaintEventArgs e){
-            Graphics g = e.Graphics;
-            //g.DrawString("werds and crap", new Font("Veranda",20), new SolidBrush(Color.Tomato), 40, 40);
-            //g.DrawRectangle(new Pen(Color.Pink, 3), 20, 20, 150, 100);
         }
 
     }

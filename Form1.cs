@@ -14,7 +14,13 @@ namespace WindowsApp
     {
         public Form1()
         {
+            this.Paint += new PaintEventHandler(f1_paint);
             InitializeComponent();
+        }
+        private void f1_paint(object sender, PaintEventArgs e){
+            Graphics g = e.Graphics;
+            g.DrawString("werds and crap", new Font("Veranda",20), new SolidBrush(Color.Tomato), 40, 40);
+            g.DrawRectangle(new Pen(Color.Pink, 3), 20, 20, 150, 100);
         }
 
     }
